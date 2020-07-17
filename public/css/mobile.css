@@ -1,0 +1,4124 @@
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1024px) {
+  body header nav ul li {
+    margin: 0 10px;
+  }
+}
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  /** General Setting ***/
+  img {
+    max-width: 100% !important;
+  }
+  main,
+  footer {
+    overflow: hidden;
+  }
+  /* For mobile phones: */
+  [class*="col-6"],
+  [class*="col-4"],
+  [class*="col-8"],
+  [class*="col-9"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  [class*="col-3"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  [class*="col-2"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body header {
+    overflow: visible;
+  }
+  body header .menu-mob {
+    display: flex;
+    max-width: 10%;
+    flex: 0 0 10%;
+    margin-right: 60px;
+  }
+  body header .menu-mob .hamb {
+    background: url('../images/icons/hamburger.svg') no-repeat;
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background-position: center center;
+    background-size: 40%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+    margin: auto;
+  }
+  body header .menu-mob ul {
+    margin-top: 30px;
+  }
+  body header .menu-mob ul li {
+    margin-bottom: 25px;
+  }
+  body header .menu-mob ul li a {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  body header .menu-mob .select-lang {
+    display: none;
+    padding-left: 0;
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  body header .menu-mob .select-lang .dropbtn {
+    font-weight: normal;
+  }
+  body header .menu-mob .select-lang .dropbtn i {
+    font-size: 11px;
+    vertical-align: baseline;
+  }
+  body header .menu-mob .select-lang .dropdown-content {
+    padding: 4px;
+  }
+  body header .menu-mob .select-lang .dropdown:hover .dropdown-content {
+    box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  body header .menu-mob .callback-header {
+    display: none;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  body header .menu-mob .callback-header a {
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0;
+  }
+  body header .menu-mob .sidenav {
+    padding: 30px;
+  }
+  body header .menu {
+    display: none;
+  }
+  body header .select-lang {
+    margin: auto 0;
+    max-width: 15%;
+    flex: 0 0 15%;
+  }
+  body header .select-lang .dropdown .dropbtn {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  body header .select-lang .dropdown .dropdown-content {
+    font-size: 16px;
+  }
+  body header .select-lang .dropdown .dropdown-content a {
+    padding: 15px 40px;
+  }
+  body header .logo {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  body header .callback-header-mob {
+    display: none;
+  }
+  body header .callback-header {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: auto 0;
+  }
+  body main .render {
+    height: auto;
+    background-size: 230%;
+  }
+  body main .render .info-text {
+    padding: 130px 0;
+  }
+  body main .render .info-text h1 {
+    font-size: 36px;
+  }
+  body main .render .info-text .description {
+    font-weight: normal;
+    font-size: 26px;
+  }
+  body main .render .order-form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .nav-tabs li {
+    border: none;
+  }
+  body main .render .order-form .nav-tabs li a {
+    border: none !important;
+    padding: 7px 20px;
+    background: transparent;
+  }
+  body main .render .order-form .nav-tabs li:last-child a {
+    padding: 0 20px;
+  }
+  body main .render .order-form .tab-content {
+    box-shadow: none;
+    padding: 0;
+  }
+  body main .render .order-form .tab-content .input-block {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  body main .render .order-form .tab-content .input-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  body main .render .order-form .tab-content .input-block .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  body main .render .order-form .tab-content .input-block .nice-select .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-block.datepicker-block,
+  body main .render .order-form .tab-content .input-block.time {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body main .render .order-form .tab-content .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-block:first-child input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px 0 0 0;
+  }
+  body main .render .order-form .tab-content .input-block:nth-child(2n) input {
+    border-radius: 0 5px 0 0;
+    border-left: none;
+  }
+  body main .render .order-form .tab-content .input-block:nth-child(2n) .nice-select {
+    border-left: none;
+  }
+  body main .render .order-form .tab-content .input-block:nth-child(2n) label {
+    z-index: 9;
+  }
+  body main .render .order-form .tab-content .input-block:nth-child(n+3) input,
+  body main .render .order-form .tab-content .input-block:nth-child(n+4) input,
+  body main .render .order-form .tab-content .input-block:nth-child(n+3) .nice-select,
+  body main .render .order-form .tab-content .input-block:nth-child(n+4) .nice-select {
+    border-top: none;
+  }
+  body main .render .order-form .tab-content .submit {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: -2px;
+  }
+  body main .render .order-form .tab-content form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .tab-content .input-group:last-child {
+    order: 1;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 5px 5px 0;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+  body main .render .order-form .tab-content .input-group:first-child {
+    order: 2;
+  }
+  body main .park {
+    padding: 70px 15px 60px;
+  }
+  body main .park h3 {
+    font-size: 30px;
+  }
+  body main .park-info {
+    padding: 0 15px;
+  }
+  body main .park-info .nav-tabs {
+    justify-content: flex-start !important;
+  }
+  body main .park-info .nav-tabs li {
+    width: 33.3%;
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a {
+    padding: 16px 9px;
+  }
+  body main .park-info .nav-tabs li a img {
+    width: 90%;
+    height: 120px;
+  }
+  body main .park-info .nav-tabs li a strong {
+    font-size: 15px;
+  }
+  body main .park-info .nav-tabs li a p {
+    font-size: 13px;
+  }
+  body main .park-info .tab-pane {
+    margin-top: 15px;
+  }
+  body main .park-info .tab-pane .advantages {
+    margin-top: 10px;
+  }
+  body main .park-info .tab-pane .advantages li {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body main .park-info .tab-pane .advantages li:nth-child(2n) {
+    padding-left: 15px;
+  }
+  body main .park-info .tab-pane .advantages li.active {
+    display: initial !important;
+  }
+  body main .park-info .tab-content .row .col-6:first-child {
+    display: initial;
+  }
+  body main .park-info .tab-content .row .col-6:first-child img {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+  }
+  body main .park-info .tab-content .row.advantages .col-6 {
+    display: initial;
+  }
+  body main .park-info .tab-content .left-50 {
+    padding: 0 15px;
+  }
+  body main .park-info .tab-content .models {
+    max-width: 33.3%;
+    flex: 0 0 33.3%;
+  }
+  body main .park-info .tab-content .models img {
+    max-width: 32px !important;
+    margin-right: 0;
+  }
+  body main .park-info .tab-content .models span {
+    font-weight: normal;
+    font-size: 15px;
+  }
+  body main .park-info .tab-content strong {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  body main .our-advantages {
+    padding: 80px 15px;
+  }
+  body main .our-advantages h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages p.info {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .our-advantages .col-7 {
+    flex: 57.5%;
+    max-width: 57.5%;
+    margin-right: 2.5%;
+  }
+  body main .our-advantages .col-5 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body main .our-advantages ul {
+    margin-bottom: 20px;
+  }
+  body main .our-advantages ul li {
+    width: 25%;
+    margin: 0;
+    padding: 15px 5px;
+  }
+  body main .our-advantages ul li img {
+    width: 60px;
+  }
+  body main .our-advantages ul li p {
+    font-size: 13px;
+  }
+  body main .our-advantages .pad-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .our-advantages .pad-0 img {
+    width: 100%;
+  }
+  body main .our-advantages .corporates {
+    padding: 40px 22px;
+    border-radius: 5px;
+    margin: 0 -15px 20px;
+  }
+  body main .our-advantages .drivers {
+    padding: 70px 22px;
+    border-radius: 5px;
+    margin: 0 -15px;
+  }
+  body main .our-advantages .how-we-work a {
+    font-size: 18px;
+  }
+  body main .our-advantages .how-we-work p {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .our-advantages.about h3 {
+    margin-bottom: 10px;
+  }
+  body main .our-advantages.about strong {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages.about p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  body main .our-advantages.about .col-6:last-child {
+    padding: 0 15px;
+    margin-top: 30px;
+    height: 310px;
+  }
+  body main .our-advantages.about .col-6:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  body main .how-we-work {
+    padding: 60px 15px;
+  }
+  body main .how-we-work h3 {
+    font-size: 30px;
+  }
+  body main .how-we-work .info {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  body main .how-we-work img {
+    margin-bottom: 10px;
+  }
+  body main .how-we-work strong {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  body main .how-we-work p {
+    font-weight: normal;
+    font-size: 13px;
+    max-width: 100%;
+  }
+  body main .how-we-work .col-4 {
+    margin-bottom: 20px;
+    max-width: 33.3%;
+  }
+  body main .collaborating {
+    padding: 70px 15px;
+  }
+  body main .collaborating .col-5 {
+    flex: 40%;
+    max-width: 40%;
+  }
+  body main .articles {
+    padding: 0 15px 40px;
+  }
+  body main .articles h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  body main .articles .col-3 {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 25px;
+  }
+  body main .articles .title {
+    font-size: 18px;
+  }
+  body main .articles .excerpt {
+    font-weight: normal;
+    font-size: 15px;
+  }
+  body main .articles .date {
+    font-weight: normal;
+    font-size: 13px;
+  }
+  body main .park-page,
+  body main .faq-page,
+  body main .about-page,
+  body main .blog-page,
+  body main .contacts-page,
+  body main .article-page,
+  body main .clients-page {
+    margin-bottom: 25px;
+  }
+  body main .park-page .breadcrumbs,
+  body main .faq-page .breadcrumbs,
+  body main .about-page .breadcrumbs,
+  body main .blog-page .breadcrumbs,
+  body main .contacts-page .breadcrumbs,
+  body main .article-page .breadcrumbs,
+  body main .clients-page .breadcrumbs {
+    font-size: 16px;
+  }
+  body main .park-page .breadcrumbs li,
+  body main .faq-page .breadcrumbs li,
+  body main .about-page .breadcrumbs li,
+  body main .blog-page .breadcrumbs li,
+  body main .contacts-page .breadcrumbs li,
+  body main .article-page .breadcrumbs li,
+  body main .clients-page .breadcrumbs li {
+    margin-right: 5px;
+  }
+  body main .park-page .park,
+  body main .faq-page .park,
+  body main .about-page .park,
+  body main .blog-page .park,
+  body main .contacts-page .park,
+  body main .article-page .park,
+  body main .clients-page .park {
+    padding: 35px 20px;
+  }
+  body main .park-page h3,
+  body main .faq-page h3,
+  body main .about-page h3,
+  body main .blog-page h3,
+  body main .contacts-page h3,
+  body main .article-page h3,
+  body main .clients-page h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  body main .park-page .callback-btn,
+  body main .faq-page .callback-btn,
+  body main .about-page .callback-btn,
+  body main .blog-page .callback-btn,
+  body main .contacts-page .callback-btn,
+  body main .article-page .callback-btn,
+  body main .clients-page .callback-btn,
+  body main .park-page .faq-btn,
+  body main .faq-page .faq-btn,
+  body main .about-page .faq-btn,
+  body main .blog-page .faq-btn,
+  body main .contacts-page .faq-btn,
+  body main .article-page .faq-btn,
+  body main .clients-page .faq-btn {
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 40px;
+    width: 200px;
+    background: linear-gradient(132.2deg, #31A56D -1.82%, #00CF6C 99.36%);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  body main .park-page .callback-btn:hover,
+  body main .faq-page .callback-btn:hover,
+  body main .about-page .callback-btn:hover,
+  body main .blog-page .callback-btn:hover,
+  body main .contacts-page .callback-btn:hover,
+  body main .article-page .callback-btn:hover,
+  body main .clients-page .callback-btn:hover,
+  body main .park-page .faq-btn:hover,
+  body main .faq-page .faq-btn:hover,
+  body main .about-page .faq-btn:hover,
+  body main .blog-page .faq-btn:hover,
+  body main .contacts-page .faq-btn:hover,
+  body main .article-page .faq-btn:hover,
+  body main .clients-page .faq-btn:hover {
+    background: linear-gradient(0deg, #232323, #232323);
+    color: #fff;
+  }
+  body main .park-page .faq-content,
+  body main .faq-page .faq-content,
+  body main .about-page .faq-content,
+  body main .blog-page .faq-content,
+  body main .contacts-page .faq-content,
+  body main .article-page .faq-content,
+  body main .clients-page .faq-content {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+  body main .park-page .topic,
+  body main .faq-page .topic,
+  body main .about-page .topic,
+  body main .blog-page .topic,
+  body main .contacts-page .topic,
+  body main .article-page .topic,
+  body main .clients-page .topic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body main .park-page .topic:last-child,
+  body main .faq-page .topic:last-child,
+  body main .about-page .topic:last-child,
+  body main .blog-page .topic:last-child,
+  body main .contacts-page .topic:last-child,
+  body main .article-page .topic:last-child,
+  body main .clients-page .topic:last-child {
+    margin-bottom: 20px;
+  }
+  body main .park-page .content,
+  body main .faq-page .content,
+  body main .about-page .content,
+  body main .blog-page .content,
+  body main .contacts-page .content,
+  body main .article-page .content,
+  body main .clients-page .content {
+    margin-top: 20px;
+    padding: 0;
+  }
+  body main .park-page h5,
+  body main .faq-page h5,
+  body main .about-page h5,
+  body main .blog-page h5,
+  body main .contacts-page h5,
+  body main .article-page h5,
+  body main .clients-page h5 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+  }
+  body main .about-page {
+    margin-bottom: 0;
+  }
+  body main .about-page h1 {
+    font-size: 40px;
+  }
+  body main .about-page strong {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  body main .about-page .head {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .about-page .content .rights-block {
+    width: 100%;
+  }
+  body main .about-page .content .rights-block .rights-btn {
+    text-align: center;
+  }
+  body main .about-page .content .driver-requirements {
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  body main .about-page .content .driver-requirements .block {
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    width: 45%;
+    margin-right: 20px;
+  }
+  body main .about-page .content .driver-requirements .block strong {
+    font-size: 18px;
+  }
+  body main .about-page .content .driver-requirements .block p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  body main .about-page .content .driver-requirements .block .icon {
+    display: none;
+  }
+  body main .about-page .content .driver-requirements .block:nth-child(2n+1) {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  body main .about-page .content .col-6 {
+    padding: 0;
+  }
+  body main .about-page .content .transfer-info {
+    position: relative;
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  body main .about-page .content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .page-404,
+  body main .thanks-page {
+    margin: 150px 0;
+  }
+  body main .page-404 h1,
+  body main .thanks-page h1 {
+    font-size: 26px;
+  }
+  body main .page-404 p,
+  body main .thanks-page p {
+    font-size: 16px;
+  }
+  body main .page-404 .content-404:before,
+  body main .thanks-page .content-404:before {
+    width: 225px;
+    height: 120px;
+  }
+  body main .article-page {
+    margin-bottom: 0;
+  }
+  body main .article-page .article-description {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  body main .article-page .article-description strong {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  body main .article-page .article-description p {
+    font-size: 15px;
+  }
+  body main .article-page .article-body {
+    margin-top: 20px;
+  }
+  body main .article-page .article-body strong {
+    font-size: 18px;
+  }
+  body main .contacts-page .contacts {
+    padding: 35px 0;
+  }
+  body main .contacts-page .content {
+    flex-wrap: wrap;
+  }
+  body main .contacts-page .content .map {
+    max-width: 62%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  body main .contacts-page .content .card {
+    max-width: 35%;
+    flex: 0 0 100%;
+    padding: 30px 15px;
+  }
+  body main .contacts-page .content .card .block p {
+    font-size: 12px;
+  }
+  body main .contacts-page .content .card .block a {
+    font-size: 12px;
+  }
+  body main .contacts-page .content .card .callback-btn {
+    font-size: 15px;
+    font-weight: normal;
+  }
+  body main .contacts-page .content h5 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  body main .contacts-page .content .faq-btn {
+    padding: 18px 30px;
+    margin: 20px 0;
+    width: 300px;
+    text-align: center;
+  }
+  body main .faq-page {
+    margin-bottom: 0;
+  }
+  body main .faq-page .faq-content {
+    box-shadow: none;
+    padding: 15px;
+  }
+  body main .faq-page h5 {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body main .faq-page .content {
+    margin-top: 25px;
+  }
+  body main .faq-page .content a {
+    font-size: 14px;
+  }
+  body main .faq-page .content a span {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  body main .faq-page .content p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  body main .faq-page .content .answer {
+    padding: 0;
+  }
+  body main .clients-page {
+    margin-bottom: 0;
+  }
+  body main .clients-page .clients-content .container {
+    padding: 0;
+  }
+  body main .clients-page .rules h3 {
+    font-size: 26px;
+  }
+  body main .clients-page .rules p {
+    font-size: 16px;
+  }
+  body main .clients-page .rules strong {
+    font-size: 18px;
+  }
+  body main .clients-page .park {
+    padding: 35px 5px;
+  }
+  body main .clients-page .container-fluid img {
+    height: 200px;
+    object-fit: cover;
+  }
+  body main .rent-page {
+    margin-bottom: 0;
+  }
+  body main .rent-page .nav-tabs {
+    margin-bottom: 25px;
+  }
+  body main .rent-page .nav-tabs li {
+    max-width: 33.3%;
+    margin: auto 0;
+  }
+  body main .rent-page .nav-tabs li:first-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li:last-child {
+    text-align: right;
+  }
+  body main .rent-page .nav-tabs li a {
+    font-size: 18px;
+  }
+  body main .rent-page .tab-content {
+    margin-top: 0;
+  }
+  body main .rent-page .tab-content .address,
+  body main .rent-page .tab-content .deparute-info,
+  body main .rent-page .tab-content .passenger-info,
+  body main .rent-page .tab-content .rentDriver-class {
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content .address .input-group,
+  body main .rent-page .tab-content .deparute-info .input-group,
+  body main .rent-page .tab-content .passenger-info .input-group,
+  body main .rent-page .tab-content .rentDriver-class .input-group {
+    padding: 0;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block input {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block:last-child label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block i,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block i,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block i,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block i {
+    left: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block label,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block label,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block label,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block {
+    flex: 60%;
+    max-width: 60%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time {
+    flex: 40%;
+    max-width: 40%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time input {
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time .nice-select {
+    padding-left: 30px;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .remove-passenger {
+    font-size: 26px;
+    background: #00CF6C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: middle;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .input-block {
+    max-width: 49%;
+    margin-right: 1%;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .input-block:nth-child(2n),
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .input-block:nth-child(2n),
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .input-block:nth-child(2n),
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .input-block:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 1%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block {
+    max-width: 50%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:first-child input {
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:last-child input {
+    border-radius: 0 5px 5px 0;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input:last-child .input-block:last-child input {
+    border-radius: 0 5px 5px 0;
+  }
+  body main .rent-page .tab-content #rentDriver .address .input-group .input-block {
+    max-width: 100%;
+  }
+  body main .rent-page .tab-content #rentDriver .address .input-group .input-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+  }
+  body main .rent-page .tab-content .deparute-info.first-row .input-group {
+    max-width: 50%;
+  }
+  body main .rent-page .tab-content .deparute-info.first-row .input-group.single-input {
+    max-width: 50%;
+  }
+  body main .rent-page .tab-content .deparute-info.first-row .input-group.single-input input {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+  }
+  body main .rent-page .tab-content .deparute-info.first-row .input-group.double-input input {
+    border-radius: 0;
+  }
+  body main .rent-page .tab-content .deparute-info.first-row .input-group.double-input .input-block.time .nice-select {
+    border-left: none;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child {
+    max-width: 50%;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child label {
+    z-index: 14;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child .nice-select .list {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:last-child {
+    max-width: 50%;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 {
+    padding: 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 0px;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input:last-child .input-block.datepicker-block .nice-select,
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input:last-child .input-block.datepicker-block input {
+    border-radius: 0;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input:last-child .input-block.time .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .input-block.time .nice-select {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+  body main .rent-page .tab-content .submission {
+    top: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 0;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .submission strong {
+    margin-top: 0;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+  }
+  body main .rent-page .tab-content .submission .submit {
+    max-width: 100%;
+    padding: 30px 111px;
+    font-size: 16px;
+    margin: 0;
+    flex: 100%;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .submission .submission-info {
+    max-width: 100%;
+    margin: 20px 0 0;
+    text-align: center;
+    display: block;
+  }
+  body main .rent-page .tab-content .submission .submission-info:before {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child label {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child .list {
+    z-index: 12;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 .single-input {
+    max-width: 55%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 .single-input .input-block input {
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 .pad-right-0 {
+    max-width: 45%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 .pad-right-0 .input-group {
+    max-width: 100%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-right-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .radio-block {
+    max-width: 100%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .radio-block .radio-group-mobile {
+    display: block;
+    max-width: 49%;
+    margin-left: 1%;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .radio-block .radio-group {
+    max-width: 49%;
+    margin-right: 1%;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info {
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info .passenger .input-block {
+    max-width: 49%;
+    margin-right: 1%;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info .passenger .input-block:nth-child(2n) {
+    margin-right: 0;
+    margin-left: 1%;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info p {
+    max-width: 100%;
+    flex: 100%;
+    padding-top: 0px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info .radio-block {
+    display: none !important;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info .input-group {
+    padding: 0;
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .radio-block {
+    top: 0;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .submission {
+    padding: 0 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .submit-info {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  body footer {
+    padding: 50px 5px 25px;
+  }
+  body footer .logo {
+    margin-bottom: 25px;
+  }
+  body footer .menu-block,
+  body footer .contacts-block {
+    max-width: 30%;
+  }
+  body footer .menu-block strong,
+  body footer .contacts-block strong {
+    font-size: 16px;
+  }
+  body footer .copyright-mob {
+    display: flex;
+    max-width: 100%;
+    flex: 100%;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+  body footer .copyright-mob p {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  body footer .copyright-mob a {
+    font-size: 12px;
+  }
+  body footer .contacts-block {
+    padding-left: 0;
+  }
+  body footer .socials-block {
+    max-width: 40%;
+    flex: 100%;
+    padding: 0 15px;
+  }
+  body footer .copyright-block {
+    max-width: 35%;
+    flex: 0 0 60%;
+  }
+  body footer .terms-block {
+    max-width: 65%;
+    margin-bottom: 25px;
+    text-align: right;
+    align-self: center;
+  }
+  body footer .copyright,
+  body footer .developers,
+  body footer .terms-block p {
+    display: none;
+  }
+  body .popup-rights {
+    padding: 20px 20px;
+  }
+  body .popup-rights .close {
+    right: -15px;
+    top: -10px;
+  }
+  body .popup-rights .popup-rights-full {
+    padding-right: 15px;
+  }
+}
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /** General Setting ***/
+  img {
+    max-width: 100% !important;
+  }
+  main,
+  footer {
+    overflow: hidden;
+  }
+  /* For mobile phones: */
+  [class*="col-6"],
+  [class*="col-4"],
+  [class*="col-7"],
+  [class*="col-8"],
+  [class*="col-9"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  [class*="col-3"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  [class*="col-2"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body header {
+    overflow: visible;
+  }
+  body header .menu-mob {
+    display: flex;
+    max-width: 10%;
+    flex: 0 0 10%;
+    margin-right: 60px;
+  }
+  body header .menu-mob .hamb {
+    background: url('../images/icons/hamburger.svg') no-repeat;
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    background-position: center center;
+    background-size: 40%;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+    margin: auto;
+  }
+  body header .menu-mob ul {
+    margin-top: 30px;
+  }
+  body header .menu-mob ul li {
+    margin-bottom: 15px;
+  }
+  body header .menu-mob ul li a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  body header .menu-mob .select-lang {
+    display: block;
+    padding-left: 0;
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  body header .menu-mob .select-lang .dropbtn {
+    font-weight: normal;
+  }
+  body header .menu-mob .select-lang .dropbtn i {
+    font-size: 11px;
+    vertical-align: baseline;
+  }
+  body header .menu-mob .select-lang .dropdown-content {
+    padding: 4px;
+  }
+  body header .menu-mob .select-lang .dropdown:hover .dropdown-content {
+    box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  body header .menu-mob .callback-header {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  body header .menu-mob .callback-header a {
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0;
+  }
+  body header .menu {
+    display: none;
+  }
+  body header .select-lang {
+    margin: auto 0;
+    max-width: 15%;
+    flex: 0 0 15%;
+  }
+  body header .select-lang .dropdown .dropbtn {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+  body header .select-lang .dropdown .dropdown-content {
+    font-size: 16px;
+  }
+  body header .select-lang .dropdown .dropdown-content a {
+    padding: 15px 40px;
+  }
+  body header .logo {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  body header .callback-header-mob {
+    display: none;
+  }
+  body header .callback-header {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: auto 0;
+  }
+  body main .render {
+    height: auto;
+    background-size: 230%;
+  }
+  body main .render .info-text {
+    padding: 65px 0 30px;
+  }
+  body main .render .info-text h1 {
+    font-size: 26px;
+  }
+  body main .render .info-text .description {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  body main .render .order-form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .nav-tabs li {
+    border: none;
+  }
+  body main .render .order-form .nav-tabs li a {
+    border: none !important;
+    padding: 7px !important;
+    text-align: center;
+    height: auto;
+    background: transparent;
+  }
+  body main .render .order-form .tab-content {
+    box-shadow: none;
+    padding: 0;
+  }
+  body main .render .order-form .tab-content .input-block {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  body main .render .order-form .tab-content .input-block input {
+    border-radius: 0px;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+  }
+  body main .render .order-form .tab-content .input-block .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  body main .render .order-form .tab-content .input-block .nice-select .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-block.datepicker-block,
+  body main .render .order-form .tab-content .input-block.time {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  body main .render .order-form .tab-content .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-block:first-child input {
+    border-radius: 5px 5px 0 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+  }
+  body main .render .order-form .tab-content .input-block:last-child label {
+    z-index: 9;
+  }
+  body main .render .order-form .tab-content .submit {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: -2px;
+  }
+  body main .render .order-form .tab-content form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .tab-content .input-group:last-child {
+    order: 1;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 5px 5px;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px 5px 0 0;
+  }
+  body main .render .order-form .tab-content .input-group:first-child {
+    order: 2;
+  }
+  body main .park {
+    padding: 70px 15px 60px;
+  }
+  body main .park h3 {
+    font-size: 26px;
+  }
+  body main .park-info {
+    padding: 0 15px;
+  }
+  body main .park-info .nav-tabs li {
+    width: 50%;
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a {
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a img {
+    width: 90%;
+    height: 120px;
+  }
+  body main .park-info .nav-tabs li a strong {
+    font-size: 14px;
+  }
+  body main .park-info .nav-tabs li a p {
+    font-size: 12px;
+  }
+  body main .park-info .tab-pane {
+    margin-top: 15px;
+  }
+  body main .park-info .tab-pane .advantages {
+    margin-top: 10px;
+  }
+  body main .park-info .tab-pane .advantages li:nth-child(2n) {
+    padding-left: 15px;
+  }
+  body main .park-info .tab-pane .advantages li.active {
+    display: initial !important;
+  }
+  body main .park-info .tab-content .row .col-6:first-child {
+    display: none;
+  }
+  body main .park-info .tab-content .left-50 {
+    padding: 0 15px;
+  }
+  body main .park-info .tab-content .models {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  body main .park-info .tab-content .models img {
+    max-width: 32px !important;
+    margin-right: 0;
+  }
+  body main .park-info .tab-content .models span {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .park-info .tab-content strong {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  body main .our-advantages {
+    padding: 80px 15px;
+  }
+  body main .our-advantages h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages p.info {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .our-advantages .col-5 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body main .our-advantages ul li {
+    width: 45%;
+    margin: 5px 5px;
+    padding: 15px 5px;
+  }
+  body main .our-advantages ul li img {
+    width: 60px;
+  }
+  body main .our-advantages ul li p {
+    font-size: 13px;
+  }
+  body main .our-advantages .pad-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .our-advantages .pad-0 img {
+    width: 100%;
+  }
+  body main .our-advantages .corporates {
+    padding: 50px 22px;
+    border-radius: 5px;
+    margin: 0 -15px 20px;
+  }
+  body main .our-advantages .drivers {
+    padding: 70px 22px;
+    border-radius: 5px;
+    margin: 0 -15px;
+  }
+  body main .our-advantages .how-we-work a {
+    font-size: 18px;
+  }
+  body main .our-advantages .how-we-work p {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .our-advantages.about h3 {
+    margin-bottom: 10px;
+  }
+  body main .our-advantages.about strong {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages.about p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  body main .our-advantages.about .col-6:last-child {
+    display: none;
+  }
+  body main .how-we-work {
+    padding: 60px 15px;
+  }
+  body main .how-we-work h3 {
+    font-size: 26px;
+  }
+  body main .how-we-work .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  body main .how-we-work img {
+    margin-bottom: 10px;
+  }
+  body main .how-we-work strong {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  body main .how-we-work p {
+    font-weight: normal;
+    font-size: 13px;
+    max-width: 100%;
+  }
+  body main .how-we-work .col-4 {
+    margin-bottom: 20px;
+  }
+  body main .collaborating {
+    padding: 70px 15px;
+  }
+  body main .articles {
+    padding: 0 15px 40px;
+  }
+  body main .articles h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  body main .articles .col-3 {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body main .articles .title {
+    font-size: 16px;
+  }
+  body main .articles .excerpt {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .articles .date {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  body main .park-page,
+  body main .faq-page,
+  body main .about-page,
+  body main .blog-page,
+  body main .contacts-page,
+  body main .article-page,
+  body main .clients-page {
+    margin-bottom: 25px;
+  }
+  body main .park-page .breadcrumbs,
+  body main .faq-page .breadcrumbs,
+  body main .about-page .breadcrumbs,
+  body main .blog-page .breadcrumbs,
+  body main .contacts-page .breadcrumbs,
+  body main .article-page .breadcrumbs,
+  body main .clients-page .breadcrumbs {
+    font-size: 14px;
+  }
+  body main .park-page .breadcrumbs li,
+  body main .faq-page .breadcrumbs li,
+  body main .about-page .breadcrumbs li,
+  body main .blog-page .breadcrumbs li,
+  body main .contacts-page .breadcrumbs li,
+  body main .article-page .breadcrumbs li,
+  body main .clients-page .breadcrumbs li {
+    margin-right: 0;
+  }
+  body main .park-page .park,
+  body main .faq-page .park,
+  body main .about-page .park,
+  body main .blog-page .park,
+  body main .contacts-page .park,
+  body main .article-page .park,
+  body main .clients-page .park {
+    padding: 35px 20px;
+  }
+  body main .park-page h3,
+  body main .faq-page h3,
+  body main .about-page h3,
+  body main .blog-page h3,
+  body main .contacts-page h3,
+  body main .article-page h3,
+  body main .clients-page h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  body main .park-page .callback-btn,
+  body main .faq-page .callback-btn,
+  body main .about-page .callback-btn,
+  body main .blog-page .callback-btn,
+  body main .contacts-page .callback-btn,
+  body main .article-page .callback-btn,
+  body main .clients-page .callback-btn,
+  body main .park-page .faq-btn,
+  body main .faq-page .faq-btn,
+  body main .about-page .faq-btn,
+  body main .blog-page .faq-btn,
+  body main .contacts-page .faq-btn,
+  body main .article-page .faq-btn,
+  body main .clients-page .faq-btn {
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 40px;
+    width: 200px;
+    background: linear-gradient(132.2deg, #31A56D -1.82%, #00CF6C 99.36%);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  body main .park-page .callback-btn:hover,
+  body main .faq-page .callback-btn:hover,
+  body main .about-page .callback-btn:hover,
+  body main .blog-page .callback-btn:hover,
+  body main .contacts-page .callback-btn:hover,
+  body main .article-page .callback-btn:hover,
+  body main .clients-page .callback-btn:hover,
+  body main .park-page .faq-btn:hover,
+  body main .faq-page .faq-btn:hover,
+  body main .about-page .faq-btn:hover,
+  body main .blog-page .faq-btn:hover,
+  body main .contacts-page .faq-btn:hover,
+  body main .article-page .faq-btn:hover,
+  body main .clients-page .faq-btn:hover {
+    background: linear-gradient(0deg, #232323, #232323);
+    color: #fff;
+  }
+  body main .park-page .faq-content,
+  body main .faq-page .faq-content,
+  body main .about-page .faq-content,
+  body main .blog-page .faq-content,
+  body main .contacts-page .faq-content,
+  body main .article-page .faq-content,
+  body main .clients-page .faq-content {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+  body main .park-page .topic,
+  body main .faq-page .topic,
+  body main .about-page .topic,
+  body main .blog-page .topic,
+  body main .contacts-page .topic,
+  body main .article-page .topic,
+  body main .clients-page .topic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body main .park-page .topic:last-child,
+  body main .faq-page .topic:last-child,
+  body main .about-page .topic:last-child,
+  body main .blog-page .topic:last-child,
+  body main .contacts-page .topic:last-child,
+  body main .article-page .topic:last-child,
+  body main .clients-page .topic:last-child {
+    margin-bottom: 20px;
+  }
+  body main .park-page .content,
+  body main .faq-page .content,
+  body main .about-page .content,
+  body main .blog-page .content,
+  body main .contacts-page .content,
+  body main .article-page .content,
+  body main .clients-page .content {
+    margin-top: 10px;
+    padding: 0;
+  }
+  body main .park-page h5,
+  body main .faq-page h5,
+  body main .about-page h5,
+  body main .blog-page h5,
+  body main .contacts-page h5,
+  body main .article-page h5,
+  body main .clients-page h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+  }
+  body main .about-page {
+    margin-bottom: 0;
+  }
+  body main .about-page h1 {
+    font-size: 32px;
+  }
+  body main .about-page strong {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  body main .about-page .head {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .about-page .content .rights-block {
+    width: 100%;
+  }
+  body main .about-page .content .rights-block .rights-btn {
+    text-align: center;
+    width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  body main .about-page .content .driver-requirements .block strong {
+    font-size: 16px;
+  }
+  body main .about-page .content .driver-requirements .block p {
+    max-width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block .icon {
+    display: none;
+  }
+  body main .about-page .content .col-6 {
+    padding: 0;
+  }
+  body main .about-page .content .transfer-info {
+    position: relative;
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  body main .about-page .content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .page-404,
+  body main .thanks-page {
+    margin: 50px 0;
+  }
+  body main .page-404 h1,
+  body main .thanks-page h1 {
+    font-size: 26px;
+  }
+  body main .page-404 p,
+  body main .thanks-page p {
+    font-size: 16px;
+  }
+  body main .page-404 .content-404:before,
+  body main .thanks-page .content-404:before {
+    width: 225px;
+    height: 120px;
+  }
+  body main .article-page {
+    margin-bottom: 0;
+  }
+  body main .article-page .article-description {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  body main .article-page .article-description strong {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  body main .article-page .article-description p {
+    font-size: 14px;
+  }
+  body main .article-page .article-body {
+    margin-top: 20px;
+  }
+  body main .article-page .article-body strong {
+    font-size: 16px;
+  }
+  body main .contacts-page .content {
+    flex-wrap: wrap;
+  }
+  body main .contacts-page .content .map {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  body main .contacts-page .content .card {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+  body main .contacts-page .content .card .block p {
+    font-size: 12px;
+  }
+  body main .contacts-page .content .card .block a {
+    font-size: 12px;
+  }
+  body main .contacts-page .content h5 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  body main .contacts-page .content .faq-btn {
+    padding: 18px 30px;
+    margin: 20px auto 0;
+    width: auto;
+    text-align: center;
+  }
+  body main .faq-page {
+    margin-bottom: 0;
+  }
+  body main .faq-page .faq-content {
+    box-shadow: none;
+    padding: 15px;
+  }
+  body main .faq-page h5 {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body main .faq-page .content {
+    margin-top: 25px;
+  }
+  body main .faq-page .content a {
+    font-size: 14px;
+  }
+  body main .faq-page .content a span {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  body main .faq-page .content p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  body main .faq-page .content .answer {
+    padding: 0;
+  }
+  body main .clients-page {
+    margin-bottom: 0;
+  }
+  body main .clients-page .park {
+    padding: 35px 5px;
+  }
+  body main .clients-page .container-fluid img {
+    height: 120px;
+    object-fit: cover;
+  }
+  body main .rent-page {
+    margin-bottom: 0;
+  }
+  body main .rent-page .nav-tabs li {
+    margin-bottom: 25px;
+  }
+  body main .rent-page .nav-tabs li:first-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li:last-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li a {
+    font-size: 18px;
+  }
+  body main .rent-page .tab-content {
+    margin-top: 0;
+  }
+  body main .rent-page .tab-content .address,
+  body main .rent-page .tab-content .deparute-info,
+  body main .rent-page .tab-content .passenger-info,
+  body main .rent-page .tab-content .rentDriver-class {
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content .address .input-group,
+  body main .rent-page .tab-content .deparute-info .input-group,
+  body main .rent-page .tab-content .passenger-info .input-group,
+  body main .rent-page .tab-content .rentDriver-class .input-group {
+    padding: 0;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block input {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block:last-child label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block i,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block i,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block i,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block i {
+    left: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block label,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block label,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block label,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block {
+    flex: 60%;
+    max-width: 60%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time {
+    flex: 40%;
+    max-width: 40%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time input {
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time .nice-select {
+    padding-left: 30px;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .remove-passenger {
+    font-size: 26px;
+    background: #00CF6C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: middle;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child label {
+    z-index: 14;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child .nice-select .list {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  body main .rent-page .tab-content .submission {
+    top: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 0;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .submission strong {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .submission .submit {
+    max-width: 100%;
+    padding: 30px 111px;
+    font-size: 16px;
+    margin: 0;
+    flex: 100%;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .submission .submission-info {
+    max-width: 100%;
+    margin: 20px 0 0;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child label {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child .list {
+    z-index: 12;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-right-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info {
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info p {
+    max-width: 100%;
+    flex: 100%;
+    padding-top: 0px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info .input-group {
+    padding: 0;
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .radio-block {
+    top: 0;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .submission {
+    padding: 0 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .submit-info {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  body footer {
+    padding: 50px 5px 25px;
+  }
+  body footer .logo {
+    margin-bottom: 25px;
+  }
+  body footer .menu-block,
+  body footer .contacts-block {
+    max-width: 50%;
+  }
+  body footer .menu-block strong,
+  body footer .contacts-block strong {
+    font-size: 16px;
+  }
+  body footer .copyright-mob {
+    display: flex;
+    max-width: 100%;
+    flex: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  body footer .copyright-mob p {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  body footer .copyright-mob a {
+    font-size: 12px;
+  }
+  body footer .contacts-block {
+    padding-left: 0;
+  }
+  body footer .socials-block {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0 15px;
+  }
+  body footer .copyright-block {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+  body footer .terms-block {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body footer .copyright,
+  body footer .developers,
+  body footer .terms-block p {
+    display: none;
+  }
+  body .popup-rights {
+    padding: 20px 20px;
+  }
+  body .popup-rights .close {
+    right: -15px;
+    top: -10px;
+  }
+  body .popup-rights .popup-rights-full {
+    padding-right: 15px;
+  }
+}
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  /** General Setting ***/
+  img {
+    max-width: 100% !important;
+  }
+  header,
+  main,
+  footer {
+    overflow: hidden;
+  }
+  /* For mobile phones: */
+  [class*="col-6"],
+  [class*="col-4"],
+  [class*="col-7"],
+  [class*="col-8"],
+  [class*="col-9"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  [class*="col-3"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  [class*="col-2"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body header .row:first-child {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  body header .menu-mob {
+    display: block;
+  }
+  body header .menu-mob .hamb {
+    background: url('../images/icons/hamburger.svg') no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-position: center center;
+    background-size: 18px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+  }
+  body header .menu-mob ul {
+    margin-top: 30px;
+  }
+  body header .menu-mob ul li {
+    margin-bottom: 15px;
+  }
+  body header .menu-mob ul li a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  body header .menu-mob .select-lang {
+    display: block;
+    padding-left: 0;
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  body header .menu-mob .select-lang .dropbtn {
+    font-weight: normal;
+  }
+  body header .menu-mob .select-lang .dropbtn i {
+    font-size: 11px;
+    vertical-align: baseline;
+  }
+  body header .menu-mob .select-lang .dropdown-content {
+    padding: 4px;
+  }
+  body header .menu-mob .select-lang .dropdown:hover .dropdown-content {
+    box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  body header .menu-mob .callback-header {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  body header .menu-mob .callback-header a {
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0;
+  }
+  body header .menu,
+  body header .select-lang {
+    display: none;
+  }
+  body header .logo {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  body header .callback-header-mob {
+    background: url('../images/icons/callback.svg') no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-position: center center;
+    background-size: 18px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  body header .callback-header {
+    display: none;
+  }
+  body main .render {
+    height: auto;
+    background-size: 230%;
+  }
+  body main .render .info-text {
+    padding: 65px 0 30px;
+  }
+  body main .render .info-text h1 {
+    font-size: 26px;
+  }
+  body main .render .info-text .description {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  body main .render .order-form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .nav-tabs li {
+    border: none;
+  }
+  body main .render .order-form .nav-tabs li a {
+    border: none !important;
+    padding: 7px !important;
+    text-align: center;
+    height: auto;
+    background: transparent;
+  }
+  body main .render .order-form .tab-content {
+    box-shadow: none;
+    padding: 0;
+  }
+  body main .render .order-form .tab-content .input-block {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  body main .render .order-form .tab-content .input-block input {
+    border-radius: 0px;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+  }
+  body main .render .order-form .tab-content .input-block .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  body main .render .order-form .tab-content .input-block .nice-select .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-block.datepicker-block,
+  body main .render .order-form .tab-content .input-block.time {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  body main .render .order-form .tab-content .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-block:first-child input {
+    border-radius: 5px 5px 0 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+  }
+  body main .render .order-form .tab-content .input-block:last-child label {
+    z-index: 9;
+  }
+  body main .render .order-form .tab-content .submit {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: -2px;
+  }
+  body main .render .order-form .tab-content form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .tab-content .input-group:last-child {
+    order: 1;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 5px 5px;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px 5px 0 0;
+  }
+  body main .render .order-form .tab-content .input-group:first-child {
+    order: 2;
+  }
+  body main .park {
+    padding: 70px 15px 60px;
+  }
+  body main .park h3 {
+    font-size: 26px;
+  }
+  body main .park-info {
+    padding: 0 15px;
+  }
+  body main .park-info .nav-tabs li {
+    width: 50%;
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a {
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a img {
+    width: 90%;
+    height: 120px;
+  }
+  body main .park-info .nav-tabs li a strong {
+    font-size: 14px;
+  }
+  body main .park-info .nav-tabs li a p {
+    font-size: 12px;
+  }
+  body main .park-info .tab-pane {
+    margin-top: 15px;
+  }
+  body main .park-info .tab-pane .advantages {
+    margin-top: 10px;
+  }
+  body main .park-info .tab-pane .advantages li:nth-child(2n) {
+    padding-left: 15px;
+  }
+  body main .park-info .tab-pane .advantages li.active {
+    display: initial !important;
+  }
+  body main .park-info .tab-content .row .col-6:first-child {
+    display: none;
+  }
+  body main .park-info .tab-content .left-50 {
+    padding: 0 15px;
+  }
+  body main .park-info .tab-content .models {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  body main .park-info .tab-content .models img {
+    max-width: 32px !important;
+    margin-right: 0;
+  }
+  body main .park-info .tab-content .models span {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .park-info .tab-content strong {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  body main .our-advantages {
+    padding: 80px 15px;
+  }
+  body main .our-advantages h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages p.info {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .our-advantages .col-5 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body main .our-advantages ul li {
+    width: 45%;
+    margin: 5px 5px;
+    padding: 15px 5px;
+  }
+  body main .our-advantages ul li img {
+    width: 60px;
+  }
+  body main .our-advantages ul li p {
+    font-size: 13px;
+  }
+  body main .our-advantages .pad-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .our-advantages .pad-0 img {
+    width: 100%;
+  }
+  body main .our-advantages .corporates {
+    padding: 50px 22px;
+    border-radius: 5px;
+    margin: 0 -15px 20px;
+  }
+  body main .our-advantages .drivers {
+    padding: 70px 22px;
+    border-radius: 5px;
+    margin: 0 -15px;
+  }
+  body main .our-advantages .how-we-work a {
+    font-size: 18px;
+  }
+  body main .our-advantages .how-we-work p {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .our-advantages.about h3 {
+    margin-bottom: 10px;
+  }
+  body main .our-advantages.about strong {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages.about p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  body main .our-advantages.about .col-6:last-child {
+    display: none;
+  }
+  body main .how-we-work {
+    padding: 60px 15px;
+  }
+  body main .how-we-work h3 {
+    font-size: 26px;
+  }
+  body main .how-we-work .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  body main .how-we-work img {
+    margin-bottom: 10px;
+  }
+  body main .how-we-work strong {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  body main .how-we-work p {
+    font-weight: normal;
+    font-size: 13px;
+    max-width: 100%;
+  }
+  body main .how-we-work .col-4 {
+    margin-bottom: 20px;
+  }
+  body main .collaborating {
+    padding: 70px 15px;
+  }
+  body main .articles {
+    padding: 0 15px 40px;
+  }
+  body main .articles h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  body main .articles .col-3 {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body main .articles .title {
+    font-size: 16px;
+  }
+  body main .articles .excerpt {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .articles .date {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  body main .park-page,
+  body main .faq-page,
+  body main .about-page,
+  body main .blog-page,
+  body main .contacts-page,
+  body main .article-page,
+  body main .clients-page {
+    margin-bottom: 25px;
+  }
+  body main .park-page .breadcrumbs,
+  body main .faq-page .breadcrumbs,
+  body main .about-page .breadcrumbs,
+  body main .blog-page .breadcrumbs,
+  body main .contacts-page .breadcrumbs,
+  body main .article-page .breadcrumbs,
+  body main .clients-page .breadcrumbs {
+    font-size: 14px;
+  }
+  body main .park-page .breadcrumbs li,
+  body main .faq-page .breadcrumbs li,
+  body main .about-page .breadcrumbs li,
+  body main .blog-page .breadcrumbs li,
+  body main .contacts-page .breadcrumbs li,
+  body main .article-page .breadcrumbs li,
+  body main .clients-page .breadcrumbs li {
+    margin-right: 0;
+  }
+  body main .park-page .park,
+  body main .faq-page .park,
+  body main .about-page .park,
+  body main .blog-page .park,
+  body main .contacts-page .park,
+  body main .article-page .park,
+  body main .clients-page .park {
+    padding: 35px 20px;
+  }
+  body main .park-page h3,
+  body main .faq-page h3,
+  body main .about-page h3,
+  body main .blog-page h3,
+  body main .contacts-page h3,
+  body main .article-page h3,
+  body main .clients-page h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  body main .park-page .callback-btn,
+  body main .faq-page .callback-btn,
+  body main .about-page .callback-btn,
+  body main .blog-page .callback-btn,
+  body main .contacts-page .callback-btn,
+  body main .article-page .callback-btn,
+  body main .clients-page .callback-btn,
+  body main .park-page .faq-btn,
+  body main .faq-page .faq-btn,
+  body main .about-page .faq-btn,
+  body main .blog-page .faq-btn,
+  body main .contacts-page .faq-btn,
+  body main .article-page .faq-btn,
+  body main .clients-page .faq-btn {
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 40px;
+    width: 200px;
+    background: linear-gradient(132.2deg, #31A56D -1.82%, #00CF6C 99.36%);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  body main .park-page .callback-btn:hover,
+  body main .faq-page .callback-btn:hover,
+  body main .about-page .callback-btn:hover,
+  body main .blog-page .callback-btn:hover,
+  body main .contacts-page .callback-btn:hover,
+  body main .article-page .callback-btn:hover,
+  body main .clients-page .callback-btn:hover,
+  body main .park-page .faq-btn:hover,
+  body main .faq-page .faq-btn:hover,
+  body main .about-page .faq-btn:hover,
+  body main .blog-page .faq-btn:hover,
+  body main .contacts-page .faq-btn:hover,
+  body main .article-page .faq-btn:hover,
+  body main .clients-page .faq-btn:hover {
+    background: linear-gradient(0deg, #232323, #232323);
+    color: #fff;
+  }
+  body main .park-page .faq-content,
+  body main .faq-page .faq-content,
+  body main .about-page .faq-content,
+  body main .blog-page .faq-content,
+  body main .contacts-page .faq-content,
+  body main .article-page .faq-content,
+  body main .clients-page .faq-content {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+  body main .park-page .topic,
+  body main .faq-page .topic,
+  body main .about-page .topic,
+  body main .blog-page .topic,
+  body main .contacts-page .topic,
+  body main .article-page .topic,
+  body main .clients-page .topic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body main .park-page .topic:last-child,
+  body main .faq-page .topic:last-child,
+  body main .about-page .topic:last-child,
+  body main .blog-page .topic:last-child,
+  body main .contacts-page .topic:last-child,
+  body main .article-page .topic:last-child,
+  body main .clients-page .topic:last-child {
+    margin-bottom: 20px;
+  }
+  body main .park-page .content,
+  body main .faq-page .content,
+  body main .about-page .content,
+  body main .blog-page .content,
+  body main .contacts-page .content,
+  body main .article-page .content,
+  body main .clients-page .content {
+    margin-top: 10px;
+    padding: 0;
+  }
+  body main .park-page h5,
+  body main .faq-page h5,
+  body main .about-page h5,
+  body main .blog-page h5,
+  body main .contacts-page h5,
+  body main .article-page h5,
+  body main .clients-page h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+  }
+  body main .about-page {
+    margin-bottom: 0;
+  }
+  body main .about-page h1 {
+    font-size: 32px;
+  }
+  body main .about-page strong {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  body main .about-page .head {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .about-page .content .rights-block {
+    width: 100%;
+  }
+  body main .about-page .content .rights-block .rights-btn {
+    text-align: center;
+    width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  body main .about-page .content .driver-requirements .block strong {
+    font-size: 16px;
+  }
+  body main .about-page .content .driver-requirements .block p {
+    max-width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block .icon {
+    display: none;
+  }
+  body main .about-page .content .col-6 {
+    padding: 0;
+  }
+  body main .about-page .content .transfer-info {
+    position: relative;
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  body main .about-page .content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .page-404,
+  body main .thanks-page {
+    margin: 50px 0;
+  }
+  body main .page-404 h1,
+  body main .thanks-page h1 {
+    font-size: 26px;
+  }
+  body main .page-404 p,
+  body main .thanks-page p {
+    font-size: 16px;
+  }
+  body main .page-404 .content-404:before,
+  body main .thanks-page .content-404:before {
+    width: 225px;
+    height: 120px;
+  }
+  body main .article-page {
+    margin-bottom: 0;
+  }
+  body main .article-page .article-description {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  body main .article-page .article-description strong {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  body main .article-page .article-description p {
+    font-size: 14px;
+  }
+  body main .article-page .article-body {
+    margin-top: 20px;
+  }
+  body main .article-page .article-body strong {
+    font-size: 16px;
+  }
+  body main .contacts-page .content {
+    flex-wrap: wrap;
+  }
+  body main .contacts-page .content .map {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  body main .contacts-page .content .card {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+  body main .contacts-page .content .card .block p {
+    font-size: 12px;
+  }
+  body main .contacts-page .content .card .block a {
+    font-size: 12px;
+  }
+  body main .contacts-page .content h5 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  body main .contacts-page .content .faq-btn {
+    padding: 18px 30px;
+    margin: 20px auto 0;
+    width: auto;
+    text-align: center;
+  }
+  body main .faq-page {
+    margin-bottom: 0;
+  }
+  body main .faq-page .faq-content {
+    box-shadow: none;
+    padding: 15px;
+  }
+  body main .faq-page h5 {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body main .faq-page .content {
+    margin-top: 25px;
+  }
+  body main .faq-page .content a {
+    font-size: 14px;
+  }
+  body main .faq-page .content a span {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  body main .faq-page .content p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  body main .faq-page .content .answer {
+    padding: 0;
+  }
+  body main .clients-page {
+    margin-bottom: 0;
+  }
+  body main .clients-page .park {
+    padding: 35px 5px;
+  }
+  body main .clients-page .container-fluid img {
+    height: 120px;
+    object-fit: cover;
+  }
+  body main .rent-page {
+    margin-bottom: 0;
+  }
+  body main .rent-page .nav-tabs li {
+    margin-bottom: 25px;
+  }
+  body main .rent-page .nav-tabs li:first-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li:last-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li a {
+    font-size: 18px;
+  }
+  body main .rent-page .tab-content {
+    margin-top: 0;
+  }
+  body main .rent-page .tab-content .address,
+  body main .rent-page .tab-content .deparute-info,
+  body main .rent-page .tab-content .passenger-info,
+  body main .rent-page .tab-content .rentDriver-class {
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content .address .input-group,
+  body main .rent-page .tab-content .deparute-info .input-group,
+  body main .rent-page .tab-content .passenger-info .input-group,
+  body main .rent-page .tab-content .rentDriver-class .input-group {
+    padding: 0;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block input {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block:last-child label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block i,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block i,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block i,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block i {
+    left: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block label,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block label,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block label,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block {
+    flex: 60%;
+    max-width: 60%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time {
+    flex: 40%;
+    max-width: 40%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time input {
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time .nice-select {
+    padding-left: 30px;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .remove-passenger {
+    font-size: 26px;
+    background: #00CF6C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: middle;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child label {
+    z-index: 14;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child .nice-select .list {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  body main .rent-page .tab-content .submission {
+    top: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 0;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .submission strong {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .submission .submit {
+    max-width: 100%;
+    padding: 30px 111px;
+    font-size: 16px;
+    margin: 0;
+    flex: 100%;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .submission .submission-info {
+    max-width: 100%;
+    margin: 20px 0 0;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child label {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child .list {
+    z-index: 12;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-right-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info {
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info p {
+    max-width: 100%;
+    flex: 100%;
+    padding-top: 0px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info .input-group {
+    padding: 0;
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .radio-block {
+    top: 0;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .submission {
+    padding: 0 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .submit-info {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  body footer {
+    padding: 50px 5px 25px;
+  }
+  body footer .logo {
+    margin-bottom: 25px;
+  }
+  body footer .menu-block,
+  body footer .contacts-block {
+    max-width: 50%;
+  }
+  body footer .menu-block strong,
+  body footer .contacts-block strong {
+    font-size: 16px;
+  }
+  body footer .copyright-mob {
+    display: flex;
+    max-width: 100%;
+    flex: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  body footer .copyright-mob p {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  body footer .copyright-mob a {
+    font-size: 12px;
+  }
+  body footer .contacts-block {
+    padding-left: 0;
+  }
+  body footer .socials-block {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0 15px;
+  }
+  body footer .copyright-block {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+  body footer .terms-block {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body footer .copyright,
+  body footer .developers,
+  body footer .terms-block p {
+    display: none;
+  }
+  body .popup-rights {
+    padding: 20px 20px;
+  }
+  body .popup-rights .close {
+    right: -15px;
+    top: -10px;
+  }
+  body .popup-rights .popup-rights-full {
+    padding-right: 15px;
+  }
+}
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (max-width: 480px) {
+  /** General Setting ***/
+  img {
+    max-width: 100% !important;
+  }
+  header,
+  main,
+  footer {
+    overflow: hidden;
+  }
+  /* For mobile phones: */
+  [class*="col-6"],
+  [class*="col-4"],
+  [class*="col-7"],
+  [class*="col-8"],
+  [class*="col-9"] {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  [class*="col-3"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  [class*="col-2"] {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  body header .row:first-child {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  body header .menu-mob {
+    display: block;
+  }
+  body header .menu-mob .hamb {
+    background: url('../images/icons/hamburger.svg') no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-position: center center;
+    background-size: 18px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    margin-right: 5px;
+  }
+  body header .menu-mob ul {
+    margin-top: 30px;
+  }
+  body header .menu-mob ul li {
+    margin-bottom: 15px;
+  }
+  body header .menu-mob ul li a {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  body header .menu-mob .select-lang {
+    display: block;
+    padding-left: 0;
+    max-width: 100px;
+    margin-top: 20px;
+  }
+  body header .menu-mob .select-lang .dropbtn {
+    font-weight: normal;
+  }
+  body header .menu-mob .select-lang .dropbtn i {
+    font-size: 11px;
+    vertical-align: baseline;
+  }
+  body header .menu-mob .select-lang .dropdown-content {
+    padding: 4px;
+  }
+  body header .menu-mob .select-lang .dropdown:hover .dropdown-content {
+    box-shadow: 0px 15px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  body header .menu-mob .callback-header {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  body header .menu-mob .callback-header a {
+    margin-bottom: 10px;
+    display: flex;
+    padding: 0;
+  }
+  body header .menu,
+  body header .select-lang {
+    display: none;
+  }
+  body header .logo {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  body header .callback-header-mob {
+    background: url('../images/icons/callback.svg') no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-position: center center;
+    background-size: 18px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  body header .callback-header {
+    display: none;
+  }
+  body main .render {
+    height: auto;
+    background-size: 230%;
+  }
+  body main .render .info-text {
+    padding: 65px 0 30px;
+  }
+  body main .render .info-text h1 {
+    font-size: 26px;
+  }
+  body main .render .info-text .description {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  body main .render .order-form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .nav-tabs li {
+    border: none;
+  }
+  body main .render .order-form .nav-tabs li a {
+    border: none !important;
+    padding: 7px !important;
+    text-align: center;
+    height: auto;
+    background: transparent;
+  }
+  body main .render .order-form .tab-content {
+    box-shadow: none;
+    padding: 0;
+  }
+  body main .render .order-form .tab-content .input-block {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  body main .render .order-form .tab-content .input-block input {
+    border-radius: 0px;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-top: none;
+  }
+  body main .render .order-form .tab-content .input-block .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+  }
+  body main .render .order-form .tab-content .input-block .nice-select .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-block.datepicker-block,
+  body main .render .order-form .tab-content .input-block.time {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  body main .render .order-form .tab-content .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-block:first-child input {
+    border-radius: 5px 5px 0 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+  }
+  body main .render .order-form .tab-content .input-block:last-child label {
+    z-index: 9;
+  }
+  body main .render .order-form .tab-content .submit {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: -2px;
+  }
+  body main .render .order-form .tab-content form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .render .order-form .tab-content .input-group:last-child {
+    order: 1;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .list {
+    z-index: 11;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child label {
+    z-index: 10;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0 0 5px 5px;
+  }
+  body main .render .order-form .tab-content .input-group:last-child .input-block:first-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px 5px 0 0;
+  }
+  body main .render .order-form .tab-content .input-group:first-child {
+    order: 2;
+  }
+  body main .park {
+    padding: 70px 15px 60px;
+  }
+  body main .park h3 {
+    font-size: 26px;
+  }
+  body main .park-info {
+    padding: 0 15px;
+  }
+  body main .park-info .nav-tabs li {
+    width: 50%;
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a {
+    padding: 0;
+  }
+  body main .park-info .nav-tabs li a img {
+    width: 90%;
+    height: 120px;
+  }
+  body main .park-info .nav-tabs li a strong {
+    font-size: 14px;
+  }
+  body main .park-info .nav-tabs li a p {
+    font-size: 12px;
+  }
+  body main .park-info .tab-pane {
+    margin-top: 15px;
+  }
+  body main .park-info .tab-pane .advantages {
+    margin-top: 10px;
+  }
+  body main .park-info .tab-pane .advantages li:nth-child(2n) {
+    padding-left: 15px;
+  }
+  body main .park-info .tab-pane .advantages li.active {
+    display: initial !important;
+  }
+  body main .park-info .tab-content .row .col-6:first-child {
+    display: none;
+  }
+  body main .park-info .tab-content .left-50 {
+    padding: 0 15px;
+  }
+  body main .park-info .tab-content .models {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+  body main .park-info .tab-content .models img {
+    max-width: 32px !important;
+    margin-right: 0;
+  }
+  body main .park-info .tab-content .models span {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .park-info .tab-content strong {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  body main .our-advantages {
+    padding: 80px 15px;
+  }
+  body main .our-advantages h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages p.info {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .our-advantages .col-5 {
+    flex: 100%;
+    max-width: 100%;
+  }
+  body main .our-advantages ul li {
+    width: 45%;
+    margin: 5px 5px;
+    padding: 15px 5px;
+  }
+  body main .our-advantages ul li img {
+    width: 60px;
+  }
+  body main .our-advantages ul li p {
+    font-size: 13px;
+  }
+  body main .our-advantages .pad-0 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .our-advantages .pad-0 img {
+    width: 100%;
+  }
+  body main .our-advantages .corporates {
+    padding: 50px 22px;
+    border-radius: 5px;
+    margin: 0 -15px 20px;
+  }
+  body main .our-advantages .drivers {
+    padding: 70px 22px;
+    border-radius: 5px;
+    margin: 0 -15px;
+  }
+  body main .our-advantages .how-we-work a {
+    font-size: 18px;
+  }
+  body main .our-advantages .how-we-work p {
+    font-weight: normal;
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .our-advantages.about h3 {
+    margin-bottom: 10px;
+  }
+  body main .our-advantages.about strong {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  body main .our-advantages.about p {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  body main .our-advantages.about .col-6:last-child {
+    display: none;
+  }
+  body main .how-we-work {
+    padding: 60px 15px;
+  }
+  body main .how-we-work h3 {
+    font-size: 26px;
+  }
+  body main .how-we-work .info {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  body main .how-we-work img {
+    margin-bottom: 10px;
+  }
+  body main .how-we-work strong {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  body main .how-we-work p {
+    font-weight: normal;
+    font-size: 13px;
+    max-width: 100%;
+  }
+  body main .how-we-work .col-4 {
+    margin-bottom: 20px;
+  }
+  body main .collaborating {
+    padding: 70px 15px;
+  }
+  body main .articles {
+    padding: 0 15px 40px;
+  }
+  body main .articles h3 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  body main .articles .col-3 {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body main .articles .title {
+    font-size: 16px;
+  }
+  body main .articles .excerpt {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  body main .articles .date {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  body main .park-page,
+  body main .faq-page,
+  body main .about-page,
+  body main .blog-page,
+  body main .contacts-page,
+  body main .article-page,
+  body main .clients-page {
+    margin-bottom: 25px;
+  }
+  body main .park-page .breadcrumbs,
+  body main .faq-page .breadcrumbs,
+  body main .about-page .breadcrumbs,
+  body main .blog-page .breadcrumbs,
+  body main .contacts-page .breadcrumbs,
+  body main .article-page .breadcrumbs,
+  body main .clients-page .breadcrumbs {
+    font-size: 14px;
+  }
+  body main .park-page .breadcrumbs li,
+  body main .faq-page .breadcrumbs li,
+  body main .about-page .breadcrumbs li,
+  body main .blog-page .breadcrumbs li,
+  body main .contacts-page .breadcrumbs li,
+  body main .article-page .breadcrumbs li,
+  body main .clients-page .breadcrumbs li {
+    margin-right: 0;
+  }
+  body main .park-page .park,
+  body main .faq-page .park,
+  body main .about-page .park,
+  body main .blog-page .park,
+  body main .contacts-page .park,
+  body main .article-page .park,
+  body main .clients-page .park {
+    padding: 35px 20px;
+  }
+  body main .park-page h3,
+  body main .faq-page h3,
+  body main .about-page h3,
+  body main .blog-page h3,
+  body main .contacts-page h3,
+  body main .article-page h3,
+  body main .clients-page h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  body main .park-page .callback-btn,
+  body main .faq-page .callback-btn,
+  body main .about-page .callback-btn,
+  body main .blog-page .callback-btn,
+  body main .contacts-page .callback-btn,
+  body main .article-page .callback-btn,
+  body main .clients-page .callback-btn,
+  body main .park-page .faq-btn,
+  body main .faq-page .faq-btn,
+  body main .about-page .faq-btn,
+  body main .blog-page .faq-btn,
+  body main .contacts-page .faq-btn,
+  body main .article-page .faq-btn,
+  body main .clients-page .faq-btn {
+    margin-left: 15px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 40px;
+    width: 200px;
+    background: linear-gradient(132.2deg, #31A56D -1.82%, #00CF6C 99.36%);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  body main .park-page .callback-btn:hover,
+  body main .faq-page .callback-btn:hover,
+  body main .about-page .callback-btn:hover,
+  body main .blog-page .callback-btn:hover,
+  body main .contacts-page .callback-btn:hover,
+  body main .article-page .callback-btn:hover,
+  body main .clients-page .callback-btn:hover,
+  body main .park-page .faq-btn:hover,
+  body main .faq-page .faq-btn:hover,
+  body main .about-page .faq-btn:hover,
+  body main .blog-page .faq-btn:hover,
+  body main .contacts-page .faq-btn:hover,
+  body main .article-page .faq-btn:hover,
+  body main .clients-page .faq-btn:hover {
+    background: linear-gradient(0deg, #232323, #232323);
+    color: #fff;
+  }
+  body main .park-page .faq-content,
+  body main .faq-page .faq-content,
+  body main .about-page .faq-content,
+  body main .blog-page .faq-content,
+  body main .contacts-page .faq-content,
+  body main .article-page .faq-content,
+  body main .clients-page .faq-content {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+  }
+  body main .park-page .topic,
+  body main .faq-page .topic,
+  body main .about-page .topic,
+  body main .blog-page .topic,
+  body main .contacts-page .topic,
+  body main .article-page .topic,
+  body main .clients-page .topic {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body main .park-page .topic:last-child,
+  body main .faq-page .topic:last-child,
+  body main .about-page .topic:last-child,
+  body main .blog-page .topic:last-child,
+  body main .contacts-page .topic:last-child,
+  body main .article-page .topic:last-child,
+  body main .clients-page .topic:last-child {
+    margin-bottom: 20px;
+  }
+  body main .park-page .content,
+  body main .faq-page .content,
+  body main .about-page .content,
+  body main .blog-page .content,
+  body main .contacts-page .content,
+  body main .article-page .content,
+  body main .clients-page .content {
+    margin-top: 10px;
+    padding: 0;
+  }
+  body main .park-page h5,
+  body main .faq-page h5,
+  body main .about-page h5,
+  body main .blog-page h5,
+  body main .contacts-page h5,
+  body main .article-page h5,
+  body main .clients-page h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+  }
+  body main .about-page {
+    margin-bottom: 0;
+  }
+  body main .about-page h1 {
+    font-size: 32px;
+  }
+  body main .about-page strong {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  body main .about-page .head {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main .about-page .content .rights-block {
+    width: 100%;
+  }
+  body main .about-page .content .rights-block .rights-btn {
+    text-align: center;
+    width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  body main .about-page .content .driver-requirements .block strong {
+    font-size: 16px;
+  }
+  body main .about-page .content .driver-requirements .block p {
+    max-width: 100%;
+  }
+  body main .about-page .content .driver-requirements .block .icon {
+    display: none;
+  }
+  body main .about-page .content .col-6 {
+    padding: 0;
+  }
+  body main .about-page .content .transfer-info {
+    position: relative;
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+  body main .about-page .content p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  body main .page-404,
+  body main .thanks-page {
+    margin: 50px 0;
+  }
+  body main .page-404 h1,
+  body main .thanks-page h1 {
+    font-size: 26px;
+  }
+  body main .page-404 p,
+  body main .thanks-page p {
+    font-size: 16px;
+  }
+  body main .page-404 .content-404:before,
+  body main .thanks-page .content-404:before {
+    width: 225px;
+    height: 120px;
+  }
+  body main .article-page {
+    margin-bottom: 0;
+  }
+  body main .article-page .article-description {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  body main .article-page .article-description strong {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  body main .article-page .article-description p {
+    font-size: 14px;
+  }
+  body main .article-page .article-body {
+    margin-top: 20px;
+  }
+  body main .article-page .article-body strong {
+    font-size: 16px;
+  }
+  body main .contacts-page .content {
+    flex-wrap: wrap;
+  }
+  body main .contacts-page .content .map {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0;
+  }
+  body main .contacts-page .content .card {
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+  body main .contacts-page .content .card .block p {
+    font-size: 12px;
+  }
+  body main .contacts-page .content .card .block a {
+    font-size: 12px;
+  }
+  body main .contacts-page .content h5 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  body main .contacts-page .content .faq-btn {
+    padding: 18px 30px;
+    margin: 20px auto 0;
+    width: auto;
+    text-align: center;
+  }
+  body main .faq-page {
+    margin-bottom: 0;
+  }
+  body main .faq-page .faq-content {
+    box-shadow: none;
+    padding: 15px;
+  }
+  body main .faq-page h5 {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  body main .faq-page .content {
+    margin-top: 25px;
+  }
+  body main .faq-page .content a {
+    font-size: 14px;
+  }
+  body main .faq-page .content a span {
+    margin-left: 0;
+    vertical-align: middle;
+  }
+  body main .faq-page .content p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  body main .faq-page .content .answer {
+    padding: 0;
+  }
+  body main .clients-page {
+    margin-bottom: 0;
+  }
+  body main .clients-page .park {
+    padding: 35px 5px;
+  }
+  body main .clients-page .container-fluid img {
+    height: 120px;
+    object-fit: cover;
+  }
+  body main .rent-page {
+    margin-bottom: 0;
+  }
+  body main .rent-page .nav-tabs li {
+    margin-bottom: 25px;
+  }
+  body main .rent-page .nav-tabs li:first-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li:last-child {
+    text-align: center;
+  }
+  body main .rent-page .nav-tabs li a {
+    font-size: 18px;
+  }
+  body main .rent-page .tab-content {
+    margin-top: 0;
+  }
+  body main .rent-page .tab-content .address,
+  body main .rent-page .tab-content .deparute-info,
+  body main .rent-page .tab-content .passenger-info,
+  body main .rent-page .tab-content .rentDriver-class {
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content .address .input-group,
+  body main .rent-page .tab-content .deparute-info .input-group,
+  body main .rent-page .tab-content .passenger-info .input-group,
+  body main .rent-page .tab-content .rentDriver-class .input-group {
+    padding: 0;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block input {
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .deparute-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .passenger-info .input-group.single-input .input-block:last-child label,
+  body main .rent-page .tab-content .rentDriver-class .input-group.single-input .input-block:last-child label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block {
+    padding: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block i,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block i,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block i,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block i {
+    left: 10px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block label,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block label,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block label,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block label {
+    left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block {
+    flex: 60%;
+    max-width: 60%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.datepicker-block input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.datepicker-block input {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    font-size: 14px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time {
+    flex: 40%;
+    max-width: 40%;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time input,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time input,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time input {
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .address .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .deparute-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .passenger-info .input-group .input-block.time .nice-select,
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block.time .nice-select {
+    padding-left: 30px;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger {
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+  }
+  body main .rent-page .tab-content .address .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .deparute-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .passenger-info .input-group.passenger .remove-passenger,
+  body main .rent-page .tab-content .rentDriver-class .input-group.passenger .remove-passenger {
+    font-size: 26px;
+    background: #00CF6C;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    vertical-align: middle;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child label {
+    z-index: 14;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:first-child .nice-select .list {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content .rentDriver-class .input-group .input-block:last-child .nice-select {
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  body main .rent-page .tab-content .deparute-info .pad-right-0 .double-input {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  body main .rent-page .tab-content .deparute-info .input-group.double-input .input-block.datepicker-block input {
+    border-right: none;
+  }
+  body main .rent-page .tab-content .submission {
+    top: 0;
+    margin-bottom: 40px;
+    max-width: 100%;
+    padding: 0;
+    flex: 100%;
+  }
+  body main .rent-page .tab-content .submission strong {
+    margin-top: 0;
+    font-size: 14px;
+  }
+  body main .rent-page .tab-content .submission .submit {
+    max-width: 100%;
+    padding: 30px 111px;
+    font-size: 16px;
+    margin: 0;
+    flex: 100%;
+    width: 100%;
+  }
+  body main .rent-page .tab-content .submission .submission-info {
+    max-width: 100%;
+    margin: 20px 0 0;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0 {
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child label {
+    z-index: 13;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-0:first-child .list {
+    z-index: 12;
+  }
+  body main .rent-page .tab-content #rentAuto .deparute-info .pad-right-0 {
+    max-width: 100%;
+    flex: 100%;
+    margin-bottom: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .passenger-info {
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info p {
+    max-width: 100%;
+    flex: 100%;
+    padding-top: 0px;
+  }
+  body main .rent-page .tab-content #rentAuto .transmission-info .input-group {
+    padding: 0;
+    margin-top: 20px;
+  }
+  body main .rent-page .tab-content #rentAuto .radio-block {
+    top: 0;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0;
+  }
+  body main .rent-page .tab-content #rentAuto .submission {
+    padding: 0 15px;
+  }
+  body main .rent-page .tab-content #rentAuto .submit-info {
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+  body footer {
+    padding: 50px 5px 25px;
+  }
+  body footer .logo {
+    margin-bottom: 25px;
+  }
+  body footer .menu-block,
+  body footer .contacts-block {
+    max-width: 50%;
+  }
+  body footer .menu-block strong,
+  body footer .contacts-block strong {
+    font-size: 16px;
+  }
+  body footer .copyright-mob {
+    display: flex;
+    max-width: 100%;
+    flex: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  body footer .copyright-mob p {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  body footer .copyright-mob a {
+    font-size: 12px;
+  }
+  body footer .contacts-block {
+    padding-left: 0;
+  }
+  body footer .socials-block {
+    max-width: 100%;
+    flex: 100%;
+    padding: 0 15px;
+  }
+  body footer .copyright-block {
+    max-width: 60%;
+    flex: 0 0 60%;
+  }
+  body footer .terms-block {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  body footer .copyright,
+  body footer .developers,
+  body footer .terms-block p {
+    display: none;
+  }
+  body .popup-rights {
+    padding: 20px 20px;
+  }
+  body .popup-rights .close {
+    right: -15px;
+    top: -10px;
+  }
+  body .popup-rights .popup-rights-full {
+    padding-right: 15px;
+  }
+}
